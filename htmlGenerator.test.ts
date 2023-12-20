@@ -1,4 +1,3 @@
-
 import { makeHeading } from './htmlGenerator';
 
 test('create h1 heading', () => {
