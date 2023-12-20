@@ -1,4 +1,3 @@
-// emailValidator.test.ts
 import { validateEmail } from './emailValidator';
 
 test('valid email should return true', () => {
