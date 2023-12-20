@@ -15,3 +15,9 @@ test('roundPrice handles zero and negative values correctly', () => {
 test('roundPrice rounds up properly for values with many decimal places', () => {
   expect(roundPrice(99.9999999)).toBe('100.00 SEK');
 });
+
+// added test cases for extended functionality
+test('roundPrice supports different currencies', () => {
+    expect(roundPrice(232.10542, 'NOK')).toBe('232.11 NOK');
+    expect(roundPrice(14, 'USD')).toBe('14.00 USD');
+    expect(roundPrice(1024.2048, 'EUR')).toBe('1024.21 EUR');})
