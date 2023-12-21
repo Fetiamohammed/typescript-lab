@@ -1,7 +1,3 @@
-// export function validateZip(zip: string): boolean {
-//     return true; //  the first test with out adding actual implementation.
-//   }
-
 export function validateZip(zip: string): boolean {
     if (zip.length !== 5) {
       return false;
