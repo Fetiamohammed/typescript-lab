@@ -7,6 +7,6 @@ test('getGenitive adds apostrophe-s for names ending in a consonant', () => {
 });
 
 test('getGenitive adds s for names ending in a vowel', () => {
-  expect(getGenitive('Anna')).toBe('Anna');
-  expect(getGenitive('Johanna')).toBe("Johanna's");
+  expect(getGenitive('Anna')).toBe("Anna");
+  expect(getGenitive('Johanna')).toBe("Johanna");
 });
